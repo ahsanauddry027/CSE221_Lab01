@@ -26,8 +26,8 @@ bool Binary(int arr[], int low, int high, int num)
         {
             return Binary(arr, low, mid - 1, num);
         }
-        return false;
     }
+    return false;
 }
 
 int main()
@@ -35,7 +35,7 @@ int main()
     int arr1[] = {10, 30, 50, 60, 70};
     int size = sizeof(arr1) / sizeof(int);
 
-    bool new1 = Binary(arr1, 0, size - 1, 70);
+    bool new1 = Binary(arr1, 0, size - 1, 90);
     if (new1 == true)
     {
         cout << "true";
